@@ -45,11 +45,10 @@ This project is a hardware implementation of the classic Tic-Tac-Toe game using 
 * `circuit-diagrams/player-selector.png` → Turn switching circuit.
 * `circuit-diagrams/winner-detector.png` → Win detection logic.
 * `circuit-diagrams/draw-circuit.png` → Draw condition circuit.
-* `pcb-design/pcb-layout.pdf` → PCB design files.
-* `simulation/proteus-simulation.pdsprj` → Proteus simulation model.
+* `circuit-diagrams/pcb-layout.png` → PCB design files.
 * `docs/project-report.pdf` → Full project documentation.
 * `docs/user-manual.md` → Detailed usage instructions.
-* `BOM.md` → Complete bill of materials.
+* `docs/BOM.md` → Complete bill of materials.
 
 ## How to Build
 
