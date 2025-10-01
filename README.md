@@ -93,6 +93,3 @@ This project is a hardware implementation of the classic Tic-Tac-Toe game using 
 * Sk Shahriar Iqbal (1906124)
 * Anik Biswas (1906125)
 
-## License
-
-This project is open source under the MIT License. See `LICENSE` file for details.
