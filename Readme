@@ -1,0 +1,114 @@
+# Tic-Tac-Toe Digital Logic Implementation
+
+A hardware implementation of the classic Tic-Tac-Toe game using only digital logic ICs - no microcontrollers or programming required.
+
+## Overview
+
+This project implements a fully functional two-player Tic-Tac-Toe game using basic logic gates (AND, OR, NOT, XOR) and D flip-flops. Players interact with the game through pushbuttons, and moves are displayed on a 3×3 LED grid with different colors representing each player.
+
+## Features
+
+- Pure hardware implementation using 74-series logic ICs
+- 3×3 LED grid for visual feedback (Red for Player 1, Green for Player 2)
+- Automatic turn switching between players
+- Win detection for all 8 possible winning combinations
+- Draw condition detection
+- Reset button to start a new game
+- Invalid move prevention (occupied cells, post-game inputs)
+
+## Hardware Requirements
+
+### ICs Used
+- 7404 (NOT gate) - 15 units
+- 7432 (OR gate) - 15 units
+- 7411 (3-input AND gate) - 16 units
+- 7408 (2-input AND gate) - 15 units
+- 7474 (D flip-flop) - 28 units
+- 7486 (XOR gate) - 18 units
+- 4072 (4-input OR gate) - 25 units
+
+### Other Components
+- LEDs - 50 (Red, Green, Yellow)
+- Pushbuttons (2-pin) - 10
+- Resistors (1kΩ, 100Ω) - 200
+- Breadboards - 15
+- Jumper wires (M-M) - 12 packs
+- 5V DC power supply
+
+## Circuit Design
+
+The project consists of four main logic units:
+
+1. **Push Button Input Controller**: Stores button states and prevents re-input on occupied cells
+2. **Player Selector**: Determines current player turn using XOR gate combinations
+3. **Winner Selector**: Checks all 8 winning combinations for each player
+4. **Draw Detector**: Identifies when all cells are filled without a winner
+
+## How to Play
+
+1. Connect the circuit to a 5V power supply
+2. Player 1 (Red) starts by pressing any of the 9 grid buttons
+3. Player 2 (Green) takes the next turn
+4. Players alternate until someone wins or the board is full
+5. Winner LED lights up (Red/Green) or Yellow LED for draw
+6. Press RESET button to start a new game
+
+## Project Structure
+
+```
+├── circuit-diagrams/
+│   ├── full-schematic.pdf
+│   ├── input-controller.png
+│   ├── player-selector.png
+│   ├── winner-detector.png
+│   └── draw-circuit.png
+├── pcb-design/
+│   ├── pcb-layout.pdf
+│   └── 3d-view.png
+├── simulation/
+│   └── proteus-simulation.pdsprj
+├── docs/
+│   ├── project-report.pdf
+│   └── user-manual.md
+├── images/
+│   └── hardware-implementation.jpg
+└── README.md
+```
+
+## Documentation
+
+Detailed project documentation including circuit analysis, design methodology, and testing results can be found in the `docs/` folder.
+
+## Bill of Materials
+
+Total estimated cost: ~3435 BDT (approximately $31 USD)
+
+Full component list with quantities and costs available in the project report.
+
+## Future Improvements
+
+- PCB implementation for better reliability
+- Seven-segment displays for score tracking
+- Additional game modes
+- Multiplayer game options (Snake & Ladder, Connect Four)
+
+## Course Information
+
+This project was completed as part of:
+- **Course**: EEE 304 - Digital Electronics Laboratory
+- **Institution**: Bangladesh University of Engineering and Technology (BUET)
+- **Department**: Electrical and Electronic Engineering
+- **Session**: July 2023
+
+## Team Members
+
+- Abid Abdullah (1906108)
+- Liakat Omar Rihan (1906120)
+- Sk Shahriar Iqbal (1906124)
+- Anik Biswas (1906125)
+
+## Acknowledgments
+
+Thanks to our course instructors:
+- Shafin-Bin-Hamid, Lecturer
+- Sadat Tahmeed Azad, Part-Time Lecturer
